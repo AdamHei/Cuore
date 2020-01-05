@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C13C41423C16369001FC688 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C13C41323C16369001FC688 /* MainTabView.swift */; };
 		1C223AC323C051E800D3E12E /* WFConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C223AC223C051E800D3E12E /* WFConnector.framework */; };
 		1C223AC623C0527900D3E12E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C223AC523C0527900D3E12E /* SystemConfiguration.framework */; };
 		1C223AC823C0528400D3E12E /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C223AC723C0528400D3E12E /* ExternalAccessory.framework */; };
@@ -15,10 +16,12 @@
 		1C223ACE23C0538F00D3E12E /* libz.1.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C223ACC23C0538F00D3E12E /* libz.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		1CA4DC1B23C03E5F0047CC2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA4DC1A23C03E5F0047CC2F /* AppDelegate.swift */; };
 		1CA4DC1D23C03E5F0047CC2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA4DC1C23C03E5F0047CC2F /* SceneDelegate.swift */; };
-		1CA4DC1F23C03E5F0047CC2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA4DC1E23C03E5F0047CC2F /* ContentView.swift */; };
 		1CA4DC2123C03E600047CC2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CA4DC2023C03E600047CC2F /* Assets.xcassets */; };
 		1CA4DC2423C03E600047CC2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CA4DC2323C03E600047CC2F /* Preview Assets.xcassets */; };
 		1CA4DC2723C03E600047CC2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CA4DC2523C03E600047CC2F /* LaunchScreen.storyboard */; };
+		1CCED17923C1536A00F253A9 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCED17823C1536A00F253A9 /* Workout.swift */; };
+		1CCED18123C1597600F253A9 /* WorkoutRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCED18023C1597600F253A9 /* WorkoutRow.swift */; };
+		1CCED18323C15A0D00F253A9 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCED18223C15A0D00F253A9 /* WorkoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +39,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C13C41323C16369001FC688 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		1C223AC223C051E800D3E12E /* WFConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WFConnector.framework; path = Strava/Frameworks/WFConnector.framework; sourceTree = "<group>"; };
 		1C223AC523C0527900D3E12E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1C223AC723C0528400D3E12E /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
@@ -44,12 +48,14 @@
 		1CA4DC1723C03E5E0047CC2F /* Strava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA4DC1A23C03E5F0047CC2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CA4DC1C23C03E5F0047CC2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1CA4DC1E23C03E5F0047CC2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1CA4DC2023C03E600047CC2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CA4DC2323C03E600047CC2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1CA4DC2623C03E600047CC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CA4DC2823C03E600047CC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CCED17723C0588500F253A9 /* StravaBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StravaBridgingHeader.h; sourceTree = "<group>"; };
+		1CCED17823C1536A00F253A9 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		1CCED18023C1597600F253A9 /* WorkoutRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutRow.swift; sourceTree = "<group>"; };
+		1CCED18223C15A0D00F253A9 /* WorkoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C13C41023C16305001FC688 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CCED17823C1536A00F253A9 /* Workout.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C13C41123C1630E001FC688 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1CCED18023C1597600F253A9 /* WorkoutRow.swift */,
+				1CCED18223C15A0D00F253A9 /* WorkoutView.swift */,
+				1C13C41323C16369001FC688 /* MainTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C13C41223C16320001FC688 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				1CCED17723C0588500F253A9 /* StravaBridgingHeader.h */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
 		1CA4DC0E23C03E5E0047CC2F = {
 			isa = PBXGroup;
 			children = (
@@ -90,8 +122,9 @@
 			children = (
 				1CA4DC1A23C03E5F0047CC2F /* AppDelegate.swift */,
 				1CA4DC1C23C03E5F0047CC2F /* SceneDelegate.swift */,
-				1CA4DC1E23C03E5F0047CC2F /* ContentView.swift */,
-				1CCED17723C0588500F253A9 /* StravaBridgingHeader.h */,
+				1C13C41223C16320001FC688 /* Supporting */,
+				1C13C41023C16305001FC688 /* Model */,
+				1C13C41123C1630E001FC688 /* Views */,
 				1CA4DC2023C03E600047CC2F /* Assets.xcassets */,
 				1CA4DC2523C03E600047CC2F /* LaunchScreen.storyboard */,
 				1CA4DC2823C03E600047CC2F /* Info.plist */,
@@ -194,7 +227,10 @@
 			files = (
 				1CA4DC1B23C03E5F0047CC2F /* AppDelegate.swift in Sources */,
 				1CA4DC1D23C03E5F0047CC2F /* SceneDelegate.swift in Sources */,
-				1CA4DC1F23C03E5F0047CC2F /* ContentView.swift in Sources */,
+				1CCED18123C1597600F253A9 /* WorkoutRow.swift in Sources */,
+				1CCED18323C15A0D00F253A9 /* WorkoutView.swift in Sources */,
+				1CCED17923C1536A00F253A9 /* Workout.swift in Sources */,
+				1C13C41423C16369001FC688 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +391,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamhei.Strava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Strava/StravaBridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = Strava/Supporting/StravaBridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,7 +426,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamhei.Strava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Strava/StravaBridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = Strava/Supporting/StravaBridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
