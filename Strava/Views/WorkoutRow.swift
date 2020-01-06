@@ -13,7 +13,7 @@ struct WorkoutRow: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            Text("Workout").font(.headline)
+            Text("\(workout.formattedStartTime)").font(.headline)
             HStack {
                 Text("Duration: \(workout.formattedDuration)").font(.subheadline)
                 Spacer()

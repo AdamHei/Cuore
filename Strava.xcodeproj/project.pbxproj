@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,12 @@
 		1C223ACA23C052C500D3E12E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C223AC923C052C500D3E12E /* CoreBluetooth.framework */; };
 		1C223ACD23C0538F00D3E12E /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C223ACC23C0538F00D3E12E /* libz.1.dylib */; };
 		1C223ACE23C0538F00D3E12E /* libz.1.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C223ACC23C0538F00D3E12E /* libz.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1C93CD2423C17A1600E08BDC /* StartWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C93CD2323C17A1600E08BDC /* StartWorkoutView.swift */; };
+		1C93CD2623C17AF500E08BDC /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C93CD2523C17AF500E08BDC /* WorkoutDetailView.swift */; };
+		1C93CD2923C17B8E00E08BDC /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 1C93CD2823C17B8E00E08BDC /* SwiftUICharts */; };
+		1C93CD2C23C17FB500E08BDC /* Chart in Frameworks */ = {isa = PBXBuildFile; productRef = 1C93CD2B23C17FB500E08BDC /* Chart */; };
+		1C93CD3023C2D92100E08BDC /* HeartRateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C93CD2F23C2D92100E08BDC /* HeartRateViewModel.swift */; };
+		1C93CD3223C2E09800E08BDC /* HeartRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C93CD3123C2E09800E08BDC /* HeartRateView.swift */; };
 		1CA4DC1B23C03E5F0047CC2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA4DC1A23C03E5F0047CC2F /* AppDelegate.swift */; };
 		1CA4DC1D23C03E5F0047CC2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA4DC1C23C03E5F0047CC2F /* SceneDelegate.swift */; };
 		1CA4DC2123C03E600047CC2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CA4DC2023C03E600047CC2F /* Assets.xcassets */; };
@@ -45,6 +51,10 @@
 		1C223AC723C0528400D3E12E /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		1C223AC923C052C500D3E12E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		1C223ACC23C0538F00D3E12E /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		1C93CD2323C17A1600E08BDC /* StartWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartWorkoutView.swift; sourceTree = "<group>"; };
+		1C93CD2523C17AF500E08BDC /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
+		1C93CD2F23C2D92100E08BDC /* HeartRateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateViewModel.swift; sourceTree = "<group>"; };
+		1C93CD3123C2E09800E08BDC /* HeartRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateView.swift; sourceTree = "<group>"; };
 		1CA4DC1723C03E5E0047CC2F /* Strava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA4DC1A23C03E5F0047CC2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CA4DC1C23C03E5F0047CC2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,8 +76,10 @@
 				1C223ACD23C0538F00D3E12E /* libz.1.dylib in Frameworks */,
 				1C223AC823C0528400D3E12E /* ExternalAccessory.framework in Frameworks */,
 				1C223AC623C0527900D3E12E /* SystemConfiguration.framework in Frameworks */,
+				1C93CD2923C17B8E00E08BDC /* SwiftUICharts in Frameworks */,
 				1C223ACA23C052C500D3E12E /* CoreBluetooth.framework in Frameworks */,
 				1C223AC323C051E800D3E12E /* WFConnector.framework in Frameworks */,
+				1C93CD2C23C17FB500E08BDC /* Chart in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +99,10 @@
 			children = (
 				1CCED18023C1597600F253A9 /* WorkoutRow.swift */,
 				1CCED18223C15A0D00F253A9 /* WorkoutView.swift */,
+				1C93CD3123C2E09800E08BDC /* HeartRateView.swift */,
 				1C13C41323C16369001FC688 /* MainTabView.swift */,
+				1C93CD2323C17A1600E08BDC /* StartWorkoutView.swift */,
+				1C93CD2523C17AF500E08BDC /* WorkoutDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,6 +113,14 @@
 				1CCED17723C0588500F253A9 /* StravaBridgingHeader.h */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		1C93CD2E23C2D91100E08BDC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1C93CD2F23C2D92100E08BDC /* HeartRateViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		1CA4DC0E23C03E5E0047CC2F = {
@@ -122,6 +145,7 @@
 			children = (
 				1CA4DC1A23C03E5F0047CC2F /* AppDelegate.swift */,
 				1CA4DC1C23C03E5F0047CC2F /* SceneDelegate.swift */,
+				1C93CD2E23C2D91100E08BDC /* ViewModel */,
 				1C13C41223C16320001FC688 /* Supporting */,
 				1C13C41023C16305001FC688 /* Model */,
 				1C13C41123C1630E001FC688 /* Views */,
@@ -170,6 +194,10 @@
 			dependencies = (
 			);
 			name = Strava;
+			packageProductDependencies = (
+				1C93CD2823C17B8E00E08BDC /* SwiftUICharts */,
+				1C93CD2B23C17FB500E08BDC /* Chart */,
+			);
 			productName = Strava;
 			productReference = 1CA4DC1723C03E5E0047CC2F /* Strava.app */;
 			productType = "com.apple.product-type.application";
@@ -198,6 +226,10 @@
 				Base,
 			);
 			mainGroup = 1CA4DC0E23C03E5E0047CC2F;
+			packageReferences = (
+				1C93CD2723C17B8E00E08BDC /* XCRemoteSwiftPackageReference "ChartView" */,
+				1C93CD2A23C17FB500E08BDC /* XCRemoteSwiftPackageReference "swiftui-extensions" */,
+			);
 			productRefGroup = 1CA4DC1823C03E5E0047CC2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -227,9 +259,13 @@
 			files = (
 				1CA4DC1B23C03E5F0047CC2F /* AppDelegate.swift in Sources */,
 				1CA4DC1D23C03E5F0047CC2F /* SceneDelegate.swift in Sources */,
+				1C93CD2423C17A1600E08BDC /* StartWorkoutView.swift in Sources */,
+				1C93CD2623C17AF500E08BDC /* WorkoutDetailView.swift in Sources */,
 				1CCED18123C1597600F253A9 /* WorkoutRow.swift in Sources */,
+				1C93CD3223C2E09800E08BDC /* HeartRateView.swift in Sources */,
 				1CCED18323C15A0D00F253A9 /* WorkoutView.swift in Sources */,
 				1CCED17923C1536A00F253A9 /* Workout.swift in Sources */,
+				1C93CD3023C2D92100E08BDC /* HeartRateViewModel.swift in Sources */,
 				1C13C41423C16369001FC688 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +490,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C93CD2723C17B8E00E08BDC /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.4;
+			};
+		};
+		1C93CD2A23C17FB500E08BDC /* XCRemoteSwiftPackageReference "swiftui-extensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-extensions/swiftui-extensions";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C93CD2823C17B8E00E08BDC /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C93CD2723C17B8E00E08BDC /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		1C93CD2B23C17FB500E08BDC /* Chart */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C93CD2A23C17FB500E08BDC /* XCRemoteSwiftPackageReference "swiftui-extensions" */;
+			productName = Chart;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1CA4DC0F23C03E5E0047CC2F /* Project object */;
 }

@@ -15,8 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        connector.delegate = self
-        connector.requestSensorConnection(WFConnectionParams())
+        print(connector.enableBTLE(true))
+//        connector.delegate = self
+
+        
+//        let params = WFConnectionParams()
+//        params.sensorType = WF_SENSORTYPE_HEARTRATE
+//        params.networkType = WF_NETWORKTYPE_ANY
+//        do {
+//            try connector.requestSensorConnection(params, withProximity: WF_PROXIMITY_RANGE_10, error: ())
+//        } catch {
+//            print(error)
+//        }
+//        connection?.delegate = self
+        
         return true
     }
     
@@ -36,6 +48,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: WFSensorConnectionDelegate {
+    func connection(_ connectionInfo: WFSensorConnection!, stateChanged connState: WFSensorConnectionStatus_t) {
+        print()
+    }
+    
+    func connectionDidTimeout(_ connectionInfo: WFSensorConnection!) {
+        print()
+    }
+    
+    func connection(_ connectionInfo: WFSensorConnection!, rejectedByDeviceNamed deviceName: String!, appAlreadyConnected appName: String!) {
+        print()
+    }
+}
+
 extension AppDelegate: WFHardwareConnectorDelegate {
     
     func hardwareConnectorHasData() {
@@ -48,6 +74,15 @@ extension AppDelegate: WFHardwareConnectorDelegate {
     
     func hardwareConnector(_ hwConnector: WFHardwareConnector!, stateChanged currentState: WFHardwareConnectorState_t) {
         print()
+//        let params = WFConnectionParams()
+//        params.sensorType = WF_SENSORTYPE_HEARTRATE
+//        params.networkType = WF_NETWORKTYPE_ANY
+//        do {
+//            connection = try connector.requestSensorConnection(params, withProximity: WF_PROXIMITY_RANGE_10, error: ()) as? WFHeartrateConnection
+//        } catch {
+//            print(error)
+//        }
+//        connection?.delegate = self
     }
     
     func hardwareConnector(_ hwConnector: WFHardwareConnector!, antBridgeStateChanged eState: WFAntBridgeState_t, onDevice deviceUUIDString: String!) {

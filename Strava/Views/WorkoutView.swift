@@ -9,14 +9,33 @@
 import SwiftUI
 
 struct WorkoutView: View {
+    
+    @State var presentingStartWorkout = false
+    
     let workouts: [Workout]
+    
+    let heartRateViewModel = HeartRateViewModel()
     
     var body: some View {
         NavigationView {
-            List(workouts, id: \.id) {
-                WorkoutRow(workout: $0)
+            VStack(alignment: .center) {
+                HeartRateView().environmentObject(heartRateViewModel)
+                List(workouts.sorted(by: {
+                    $0.startTime > $1.startTime
+                }), id: \.id) { workout in
+                    NavigationLink(destination: WorkoutDetailView(workout: workout)) {
+                        WorkoutRow(workout: workout)
+                    }
+                }
             }
-            .navigationBarTitle(Text("Workouts"))
+//            .navigationBarTitle(Text("Workouts"))
+            .navigationBarItems(trailing: Button(action: {
+                self.presentingStartWorkout.toggle()
+            }, label: {
+                Image(systemName: "plus.circle").font(.title)
+            }))
+        }.sheet(isPresented: $presentingStartWorkout) {
+            StartWorkoutView()
         }
     }
 }
