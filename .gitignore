@@ -1,2 +1,6 @@
-Strava/xcuserdata/*
-Strava/project/xcworkspace/*
+*.resolved
+Strava.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+*.xcuserstate
+Strava.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+*.xcbkptlist
+Strava.xcodeproj/xcuserdata/adamhei.xcuserdatad/xcschemes/xcschememanagement.plist
